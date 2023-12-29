@@ -117,6 +117,8 @@ document.querySelector("#btn-mode").addEventListener("click", () => {
     document.documentElement.style.setProperty("--font-color", "#000000");
     document.documentElement.style.setProperty("--subtitle", "#79767C");
 
+    document.querySelector("#logo-na-icon").style.filter = "invert(0)";
+
     
     document.querySelector(".carousel-cell:nth-child(1) img").src =
       "images/icons/black-icons/html-icon-black.png";
@@ -167,6 +169,8 @@ document.querySelector("#btn-mode").addEventListener("click", () => {
     document.documentElement.style.setProperty("--bckg", "#212738");
     document.documentElement.style.setProperty("--font-color", "#ffffff");
     document.documentElement.style.setProperty("--subtitle", "#4F7CAC");
+
+    document.querySelector("#logo-na-icon").style.filter = "invert(1)";
 
     document.querySelector(".carousel-cell:nth-child(1) img").src =
       "images/icons/white-icons/html-icon-white.png";
