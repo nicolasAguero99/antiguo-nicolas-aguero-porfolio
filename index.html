@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nicolas Aguero - Portfolio Desarrollador Web</title>
+  <meta name="description"
+    content="Bienvenido a mi portafolio. Soy Nicolás Agüero, un desarrollador (Full Stack) y diseñador web especializado en HTML, CSS, JavaScript, React, Php, Mysql, WordPress, Vue, entre otros. Aquí encontrarás algunos de mis proyectos en el desarrollo y diseño web. ¡Contáctame para comenzar a trabajar juntos!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords"
+    content="portfolio, desarrollador web, diseñador web, full stack, front end, react, javascript, html, css, programación">
+  <meta name="author" content="Nicolás Agüero">
+  <meta name="robots" content="index, follow">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#7f5af0">
+  <meta name="copyright" content="© 2022 Nicolás Agüero">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="publisher" content="Nicolás Agüero">
+  <meta name="telephone" content="+5440974316">
+
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+</head>
+
+<body>
+  <nav>
+    <div id="container-logo">
+      <a href="index.html">
+        <img src="images/icons/white-icons/javascript-icon-white.png" alt="Mi logo">
+      </a>
+    </div>
+    <img id="container-mobile-menu" src="images/icons/white-icons/menu-icon-white.svg" alt="open menu mobile">
+    <ul id="container-menu">
+      <li id="close-mobile-menu">
+        <img src="images/icons/white-icons/cross-icon-white.svg" alt="close menu mobile">
+      </li>
+      <li class="nav-hvr-underline-from-left"><a href="#section-about-me">Sobre mí</a></li>
+      <li class="nav-hvr-underline-from-left"><a href="#section-skills">Habilidades</a></li>
+      <li class="nav-hvr-underline-from-left"><a href="#section-projects">Proyectos</a></li>
+    </ul>
+  </nav>
+
+  <div id="bckg-mobile-menu"></div>
+
+  <div id="container-btn">
+    <button id='btn-open-container-btn'>
+      <img src="images/icons/white-icons/arrow-icon-white.svg" alt="see more">
+    </button>
+    <div>
+      <button id="btn-mode"><img src="images/icons/white-icons/dark-light-mode-icon-white.svg"
+          alt="mode dark light"></button>
+      <button id="btn-traduce"><img src="images/icons/white-icons/lang-icon-white.svg" alt="change language"></button>
+    </div>
+  </div>
+
+  <header>
+    <div id="container-name">
+      <h1 id="header-name" class="magictime puffdIn">Hola, soy <strong>Nicolás Agüero</strong></h1>
+      <div id='typed-strings' style="display:none;">
+        <p>Full Stack developer</p>
+        <p>Web designer</p>
+      </div>
+      <!-- <div id='typed-strings-english' style="display:none;">
+        <p>Full Stack developer</p>
+        <p>Web designer</p>
+      </div> -->
+      <span id="header-subtitle"></span>
+      <!-- <span id="header-subtitle-english"></span> -->
+      <p id="header-text">Más de 4 años de experiencia en desarrollo y diseño web, complementado con otros conocimientos
+        relacionados</p>
+      <a href="https://api.whatsapp.com/send?phone=1140974316&text=Hola, he visto tu portfolio y quiero contactarme contigo!!!"
+        target='_blank' id="header-btn" class="hvr-bounce-to-right">
+        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Contáctame
+      </a>
+    </div>
+    <div id="div-img-me">
+      <img id="img-me" src="images/me-emoji-header.png" alt="Nicolás Agüero">
+    </div>
+    <canvas class="background"></canvas>
+  </header>
+
+  <div id="social-left">
+    <a href="mailto:nico.agueroo99@gmail.com" target="_blank">
+      <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
+            stroke="#7f5af0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+      </svg>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=1140974316&text=Hola, he visto tu portfolio y quiero contactarme contigo!!!"
+      target='_blank'>
+      <svg width="800px" height="800px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="SVGRepo_iconCarrier">
+          <path fill="#7f5af0" fill-rule="evenodd"
+            d="M96 16c-44.183 0-80 35.817-80 80 0 13.12 3.163 25.517 8.771 36.455l-8.608 36.155a6.002 6.002 0 0 0 7.227 7.227l36.155-8.608C70.483 172.837 82.88 176 96 176c44.183 0 80-35.817 80-80s-35.817-80-80-80ZM28 96c0-37.555 30.445-68 68-68s68 30.445 68 68-30.445 68-68 68c-11.884 0-23.04-3.043-32.747-8.389a6.003 6.003 0 0 0-4.284-.581l-28.874 6.875 6.875-28.874a6.001 6.001 0 0 0-.581-4.284C31.043 119.039 28 107.884 28 96Zm46.023 21.977c11.975 11.974 27.942 20.007 45.753 21.919 11.776 1.263 20.224-8.439 20.224-18.517v-6.996a18.956 18.956 0 0 0-13.509-18.157l-.557-.167-.57-.112-8.022-1.58a18.958 18.958 0 0 0-15.25 2.568 42.144 42.144 0 0 1-7.027-7.027 18.958 18.958 0 0 0 2.569-15.252l-1.582-8.021-.112-.57-.167-.557A18.955 18.955 0 0 0 77.618 52H70.62c-10.077 0-19.78 8.446-18.517 20.223 1.912 17.81 9.944 33.779 21.92 45.754Zm33.652-10.179a6.955 6.955 0 0 1 6.916-1.743l8.453 1.665a6.957 6.957 0 0 1 4.956 6.663v6.996c0 3.841-3.124 6.995-6.943 6.585a63.903 63.903 0 0 1-26.887-9.232 64.594 64.594 0 0 1-11.661-9.241 64.592 64.592 0 0 1-9.241-11.661 63.917 63.917 0 0 1-9.232-26.888C63.626 67.123 66.78 64 70.62 64h6.997a6.955 6.955 0 0 1 6.66 4.957l1.667 8.451a6.956 6.956 0 0 1-1.743 6.917l-1.12 1.12a5.935 5.935 0 0 0-1.545 2.669c-.372 1.403-.204 2.921.603 4.223a54.119 54.119 0 0 0 7.745 9.777 54.102 54.102 0 0 0 9.778 7.746c1.302.806 2.819.975 4.223.603a5.94 5.94 0 0 0 2.669-1.545l1.12-1.12Z"
+            clip-rule="evenodd" />
+        </g>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/nicolas-aguero99/" target="_blank">
+      <svg fill="#7f5af0" width="800px" height="800px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z"
+            fill-rule="evenodd" />
+        </g>
+      </svg>
+    </a>
+    <a href="https://github.com/nicolasAguero99" target="_blank">
+      <svg width="800px" height="800px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="SVGRepo_iconCarrier">
+          <path stroke="#7f5af0" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+            d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
+        </g>
+      </svg>
+    </a>
+  </div>
+
+  <section id="section-about-me">
+    <div id="container-about-me-img" class="entryLeftObserver">
+      <img src="images/me-emoji.png" alt="Nicolas Aguero" loading='lazy'>
+    </div>
+    <div id="container-about-me-info" class="entryRightObserver">
+      <h2 id="title-aboutMe">Sobre mí</h2>
+      <p>Mi nombre es <strong>Nicolás Martín Agüero</strong>, tengo 18 años y vivo en Buenos Aires (CABA),
+        <strong>Argentina</strong>.
+        Me gusta programar, diseñar, hacer música y crear.<br>
+        Me recibí en <strong>Técnico Superior en Diseño y Programación Web</strong> web en la "<strong><a
+            class="hvr-skew" target="_blank" href="https://davinci.edu.ar/carreras/desarrollo-web-y-mobile">Escuela Da
+            Vinci</a></strong>".
+      </p>
+      <a href='/docs/Curriculum_Nicolas_Aguero.pdf' target='_blank'>
+        <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.41078 14.6507C8.37216 14.7523 8.32144 14.84 8.25861 14.9132C8.19636 14.9877 8.12028 15.0454 8.03037 15.0869C7.94045 15.1285 7.83036 15.1487 7.70183 15.1487C7.52142 15.1487 7.37213 15.1094 7.25224 15.0315C7.13236 14.9525 7.03668 14.8492 6.9652 14.7194C6.89373 14.5907 6.84186 14.4441 6.80958 14.2831C6.77673 14.1221 6.76116 13.9577 6.76116 13.7915C6.76116 13.6247 6.77673 13.4614 6.80958 13.2992C6.84186 13.1371 6.89373 12.9917 6.9652 12.863C7.03668 12.7332 7.13236 12.6299 7.25224 12.5508C7.37213 12.4718 7.52199 12.4337 7.70183 12.4337C7.85803 12.4337 7.98656 12.4631 8.0857 12.5225C8.18484 12.5831 8.26438 12.6524 8.32432 12.7309C8.38427 12.8099 8.42577 12.8884 8.44882 12.9698C8.47188 13.05 8.48802 13.114 8.49724 13.1602H9.9774C9.91284 12.537 9.69497 12.0557 9.3232 11.7164C8.95201 11.3771 8.42519 11.2046 7.74333 11.2C7.36061 11.2 7.01535 11.2617 6.70929 11.3869C6.40265 11.511 6.13982 11.687 5.92079 11.9132C5.70177 12.1394 5.53346 12.4112 5.41588 12.7303C5.2983 13.0482 5.23893 13.4025 5.23893 13.7897C5.23893 14.1539 5.29484 14.4955 5.40493 14.8111C5.5156 15.1279 5.67871 15.4003 5.89313 15.6317C6.10754 15.8631 6.36865 16.0454 6.67759 16.1793C6.98653 16.312 7.34158 16.3801 7.74333 16.3801C8.10299 16.3801 8.42346 16.3195 8.70474 16.2001C8.98544 16.0795 9.22176 15.9219 9.41311 15.7257C9.60448 15.5295 9.74972 15.3085 9.84886 15.0644C9.948 14.8209 9.99815 14.5728 9.99815 14.3241H8.50358C8.4811 14.4395 8.45055 14.5497 8.41078 14.6507Z"
+            fill="#ffffff" />
+          <path
+            d="M12.4813 14.3177H12.4675L11.6582 11.3193H10.1227L11.596 16.2635H13.2975L14.8404 11.3193H13.2767L12.4813 14.3177Z"
+            fill="#ffffff" />
+          <path
+            d="M16.407 0H0.122925V26H20.1229V3.60712L16.407 0ZM18.3938 24.2683H1.85208V1.73114H15.5159V4.47788H18.3932L18.3938 24.2683Z"
+            fill="#ffffff" />
+        </svg>
+        Ver mi Cv
+      </a>
+    </div>
+  </section>
+
+  <section id="section-line" class="entryTopObserver">
+    <div>
+      <div id="line"></div>
+      <div id="line-places">
+        <div>
+          <h3>Escuela Da Vinci</h3>
+          <span>Terciaria</span>
+        </div>
+        <div>
+          <h3>Instituto San Rafael</h3>
+          <span>Secundaria</span>
+        </div>
+        <div>
+          <h3>Instituto San Rafael</h3>
+          <span>Primaria</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-skills">
+    <h2 id="title-skills" class="entryTopObserver">Habilidades</h2>
+    <div class="carousel entryTopObserver" data-flickity='{ "groupCells": true, "autoPlay": true }'>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/html-icon-white.png" alt="Html icon" loading='lazy'>
+        <h3>Html</h3>
+        <span>Front End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/css-icon-white.png" alt="Css icon" loading='lazy'>
+        <h3>Css</h3>
+        <span>Front End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/javascript-icon-white.png" alt="Javascript icon" loading='lazy'>
+        <h3>Javascript</h3>
+        <span>Front End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/react-icon-white.png" alt="React icon" loading='lazy'>
+        <h3>React</h3>
+        <span>Front End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/typescript-icon-white.png" alt="Typescript icon" loading='lazy'>
+        <h3>Typescript</h3>
+        <span>Front End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/vue-icon-white.png" alt="Vue icon" loading='lazy'>
+        <h3>Vue</h3>
+        <span>Front End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/node-icon-white.png" alt="Node icon" loading='lazy'>
+        <h3>Node</h3>
+        <span>Back End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/php-icon-white.png" alt="Php icon" loading='lazy'>
+        <h3>Php</h3>
+        <span>Back End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/mongoDb-icon-white.png" alt="Mongo Db icon" loading='lazy'>
+        <h3>Mongo Db</h3>
+        <span>Back End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/mysql-icon-white.png" alt="MySql icon" loading='lazy'>
+        <h3>MySql</h3>
+        <span>Back End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/wordpress-icon-white.png" alt="WordPress icon" loading='lazy'>
+        <h3>WordPress</h3>
+        <span>Cms</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/astro-icon-white.png" alt="Astro icon" loading='lazy'>
+        <h3>Astro</h3>
+        <span>Front End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/sass-icon-white.png" alt="Sass icon" loading='lazy'>
+        <h3>Sass</h3>
+        <span>Front End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/tailwind-icon-white.png" alt="Tailwind icon" loading='lazy'>
+        <h3>Tailwind</h3>
+        <span>Front End</span>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/icons/white-icons/bootstrap-icon-white.png" alt="Bootstrap icon" loading='lazy'>
+        <h3>Bootstrap</h3>
+        <span>Front End</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="section-skills">
+    <h2 id="title-skills" class="entryTopObserver">Habilidades</h2>
+    <div class='container-skill-item'>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/html-icon-white.png" alt="Html icon" loading='lazy'>
+        <h3>Html</h3>
+        <span>Front End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/css-icon-white.png" alt="Css icon" loading='lazy'>
+        <h3>Css</h3>
+        <span>Front End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/javascript-icon-white.png" alt="Javascript icon" loading='lazy'>
+        <h3>Javascript</h3>
+        <span>Front End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/react-icon-white.png" alt="React icon" loading='lazy'>
+        <h3>React</h3>
+        <span>Front End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/typescript-icon-white.png" alt="Typescript icon" loading='lazy'>
+        <h3>Typescript</h3>
+        <span>Front End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/vue-icon-white.png" alt="Vue icon" loading='lazy'>
+        <h3>Vue</h3>
+        <span>Front End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/node-icon-white.png" alt="Node icon" loading='lazy'>
+        <h3>Node</h3>
+        <span>Back End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/php-icon-white.png" alt="Php icon" loading='lazy'>
+        <h3>Php</h3>
+        <span>Back End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/mongoDb-icon-white.png" alt="Mongo Db icon" loading='lazy'>
+        <h3>Mongo Db</h3>
+        <span>Back End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/mysql-icon-white.png" alt="MySql icon" loading='lazy'>
+        <h3>MySql</h3>
+        <span>Back End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/wordpress-icon-white.png" alt="WordPress icon" loading='lazy'>
+        <h3>WordPress</h3>
+        <span>Cms</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/sass-icon-white.png" alt="Sass icon" loading='lazy'>
+        <h3>Sass</h3>
+        <span>Front End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/tailwind-icon-white.png" alt="Tailwind icon" loading='lazy'>
+        <h3>Tailwind</h3>
+        <span>Front End</span>
+      </div>
+      <div class='skill-item'>
+        <img src="images/icons/white-icons/bootstrap-icon-white.png" alt="Bootstrap icon" loading='lazy'>
+        <h3>Bootstrap</h3>
+        <span>Front End</span>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="section-projects">
+    <h2 id="title-projects" class="entryTopObserver">Proyectos</h2>
+    <div id="container-projects" class="entryTopObserver">
+      <div>
+        <a href="https://ready-app-gamma.vercel.app/" target="_blank">
+          <img src="/images/images/Ready.jpg"
+            alt="Ready foto" title="Ver proyecto" loading='lazy'>
+          </a>
+        <div class="info-project">
+          <h3>Ready</h3>
+          <p class='project-spanish'>Proyecto académico (tesis final) el cual consiste en una app que se centra en la gestión de tareas de las empresas. (Solicitar acceso para ver código).</p>
+          <p class='project-english' style='display: none;'>Academic project (final thesis) which consists of an app that focuses on the management of company tasks. (Request access to view code).</p>
+          <div>
+            <span>React</span>
+            <span>Node</span>
+            <span>Mongo Db</span>
+            <span>Axios</span>
+            <span>Jwt</span>
+            <span>Socket.io</span>
+          </div>
+          <div class='container-links'>
+            <a href="https://ready-app-gamma.vercel.app/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/Ready-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#" target="_blank"><img src="/images/images/Nowly.jpg"
+            alt="Nowly foto" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Nowly</h3>
+          <p class='project-spanish'>Proyecto personal el cual consiste en una es una app mobile de administrador de tareas personal, el cual cuenta con diferentes funciones para ayudarte. (Solicitar acceso para ver código).</p>
+          <p class='project-english' style='display: none;'>Personal project which consists of a personal task manager mobile app, which has different functions to help you. (Request access to view code).</p>
+          <div>
+            <span>React native</span>
+          </div>
+          <div class='container-links'>
+            <!-- <a href="#" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a> -->
+            <a href="#" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="https://task-list-project-chi.vercel.app/" target="_blank"><img src="/images/images/TaskList.jpg"
+            alt="My project" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Task list</h3>
+          <p class='project-spanish'>Proyecto personal en el que consiste en una app de lista de tareas o también llamadas "task list" o "todo list".</p>
+          <p class='project-english' style='display: none;'>Personal project that consists of a task list app or also called "task list" or "todo list".</p>
+          <div>
+            <span>React</span>
+            <span>Scss</span>
+          </div>
+          <div class='container-links'>
+            <a href="https://task-list-project-chi.vercel.app/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/TaskList-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="https://sneak-er.vercel.app/" target="_blank"><img src="/images/images/SneakEr.jpg"
+            alt="Sneak-er foto" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Sneak-er</h3>
+          <p class='project-spanish'>Proyecto personal en el que consiste en un prototipo de un sitio web, el cual se ofrecen zapatillas (calzado) deportivas de diferentes marcas.</p>
+          <p class='project-english' style='display: none;'>Personal project that consists of a prototype of a website, which offers sports shoes (footwear) from different brands.</p>
+          <div>
+            <span>React</span>
+            <span>Tailwind</span>
+            <span>Three.js</span>
+          </div>
+          <div class='container-links'>
+            <a href="https://sneak-er.vercel.app/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/SneakEr-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="https://nicolasaguero99.github.io/FlyX-project/" target="_blank"><img src="/images/images/FlyX.jpg"
+            alt="Fly X foto" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Fly X</h3>
+          <p class='project-spanish'>Proyecto académico en el que consiste en una PWA (utilizando ServiceWorker y Manifest) y utilizando una API y un Json local.</p>
+          <p class='project-english' style='display: none;'>Academic project that consists of a PWA (using ServiceWorker and Manifest) and using an API and a local Json.</p>
+          <div>
+            <span>Html</span>
+            <span>Css</span>
+            <span>Javascript</span>
+            <span>Tailwind</span>
+            <span>PWA</span>
+            <span>API</span>
+          </div>
+          <div class='container-links'>
+            <a href="https://nicolasaguero99.github.io/FlyX-project/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/FlyX-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="http://level-up.rf.gd/" target="_blank"><img src="/images/images/LevelUp.jpg"
+            alt="Level Up foto" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Tienda LevelUp</h3>
+          <p class='project-spanish'>Proyecto académico en el que consiste realizar una tienda de juegos, que cuenta con uan base de datos, sección para administradores, usuarios, login/register y carrito.</p>
+          <p class='project-english' style='display: none;'>Academic project that consists of creating a game store, which has a database, section for administrators, users, login/register and cart.</p>
+          <div>
+            <span>Html</span>
+            <span>Css</span>
+            <span>Bootstrap</span>
+            <span>Php</span>
+            <span>MySql</span>
+          </div>
+          <div class='container-links'>
+            <a href="http://level-up.rf.gd/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/LevelUp-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="https://nicolasaguero99.github.io/Flixplay-project/" target="_blank"><img src="/images/images/Flixplay.jpg"
+            alt="Flixplay foto" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Flixplay</h3>
+          <p class='project-spanish'>Proyecto académico en el que consiste en realizar una app de películas con su buscador, seleccionar una película en especifíco y ver sus detalles, empleando una API.</p>
+          <p class='project-english' style='display: none;'>Academic project that consists of creating a movie app with its search engine, selecting a specific movie and viewing its details, using an API.</p>
+          <div>
+            <span>Vue</span>
+            <span>API</span>
+          </div>
+          <div class='container-links'>
+            <a href="https://nicolasaguero99.github.io/Flixplay-project/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/Flixplay-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="https://nicolasaguero99.github.io/TodoApp-project/" target="_blank"><img src="/images/images/TodoApp.jpg"
+            alt="TodoApp foto" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>To Do App</h3>
+          <p class='project-spanish'>Proyecto académico que consiste en realizar una todo app que cuenta con su buscador de tareas y sus funciones típicas de agregar, editar y borrar.</p>
+          <p class='project-english' style='display: none;'>Academic project that consists of creating an all-app that has its task search engine and its typical functions of adding, editing and deleting.</p>
+          <div>
+            <span>Vue</span>
+          </div>
+          <div class='container-links'>
+            <a href="https://nicolasaguero99.github.io/TodoApp-project/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/TodoApp-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="https://nicolasaguero99.github.io/Flixplay-project/" target="_blank"><img src="/images/images/Urban-Hell.jpg"
+            alt="Flixplay foto" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Urban Hell</h3>
+          <p class='project-spanish'>Proyecto académico en el que consiste en es una tienda de ropa, con su catálogo de productos y poder agregar al carrito cada uno de estos.</p>
+          <p class='project-english' style='display: none;'>Academic project that consists of a clothing store, with its product catalog and being able to add each of these to the cart.</p>
+          <div>
+            <span>Html</span>
+            <span>Css</span>
+            <span>Javascript</span>
+            <span>PWA</span>
+            <span>API</span>
+          </div>
+          <div class='container-links'>
+            <a href="https://nicolasaguero99.github.io/UrbanHell-project/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/UrbanHell-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="https://nicolasaguero99.github.io/Starbucks-project/" target="_blank"><img src="images/images/Starbucks.jpg"
+            alt="Starbucks foto" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Starbucks landing page</h3>
+          <p class='project-spanish'>Proyecto académico que consiste en realizar una landing page promocionando la famosa empresa de Starbucks, a su vez contando con una PWA.</p>
+          <p class='project-english' style='display: none;'>Academic project that consists of creating a landing page promoting the famous Starbucks company, in turn having a PWA.</p>
+          <div>
+            <span>Html</span>
+            <span>Css</span>
+            <span>Javascript</span>
+            <span>Bootstrap</span>
+            <span>PWA</span>
+          </div>
+          <div class='container-links'>
+            <a href="https://nicolasaguero99.github.io/Starbucks-project/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/Starbucks-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="https://nicolasaguero99.github.io/Havanna-project/" target="_blank"><img src="images/images/Havanna.jpg"
+            alt="Havanna foto" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Havanna landing page</h3>
+          <p class='project-spanish'>Proyecto académico que consiste en realizar una landing page promocionando la famosa empresa Argentina de Havanna.</p>
+          <p class='project-english' style='display: none;'>Academic project that consists of creating a landing page promoting the famous Argentine company Havanna.</p>
+          <div>
+            <span>Html</span>
+            <span>Css</span>
+            <span>Javascript</span>
+            <span>Bootstrap</span>
+          </div>
+          <div class='container-links'>
+            <a href="https://nicolasaguero99.github.io/Havanna-project/" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="https://github.com/nicolasAguero99/Havanna-project" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div>
+        <a href="#" target="_blank"><img src="https://okdiario.com/img/2022/12/11/lo-que-mas-odian-los-gatos.jpg"
+            alt="My project" title="Ver proyecto" loading='lazy'></a>
+        <div class="info-project">
+          <h3>Doggy landing page</h3>
+          <p class='project-spanish'>Proyecto académico que consiste en realizar una landing page promocionando una empresa que vende casas para perros.</p>
+          <p class='project-english' style='display: none;'>Academic project that consists of creating a landing page promoting a company that sells houses for dogs.</p>
+          <div>
+            <span>WordPress</span>
+          </div>
+          <div class='container-links'>
+            <a href="#" target="_blank">
+              <span class='see-project'>Ver proyecto</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver proyecto" loading='lazy'>
+            </a>
+            <a href="#" target="_blank">
+              <span class='see-code'>Ver código</span>
+              <img src="images/external-link-icon.svg" alt="Go to page" title="Ver código" loading='lazy'>
+            </a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <h2>Nicolás Martín Agüero</h2>
+      <h3>Mi portfolio</h3>
+    </div>
+    <ul>
+      <li class="hvr-underline-from-left" id="footer-eml">
+        <a href="mailto:nico.agueroo99@gmail.com" target="_blank">
+          <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
+                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+          Email
+        </a>
+      </li>
+      <li class="hvr-underline-from-left" id="footer-wpp">
+        <a href="https://api.whatsapp.com/send?phone=1140974316&text=Hola, he visto tu portfolio y quiero contactarme contigo!!!"
+          target='_blank'>
+          <svg width="800px" height="800px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+            <g id="SVGRepo_iconCarrier">
+              <path fill="#ffffff" fill-rule="evenodd"
+                d="M96 16c-44.183 0-80 35.817-80 80 0 13.12 3.163 25.517 8.771 36.455l-8.608 36.155a6.002 6.002 0 0 0 7.227 7.227l36.155-8.608C70.483 172.837 82.88 176 96 176c44.183 0 80-35.817 80-80s-35.817-80-80-80ZM28 96c0-37.555 30.445-68 68-68s68 30.445 68 68-30.445 68-68 68c-11.884 0-23.04-3.043-32.747-8.389a6.003 6.003 0 0 0-4.284-.581l-28.874 6.875 6.875-28.874a6.001 6.001 0 0 0-.581-4.284C31.043 119.039 28 107.884 28 96Zm46.023 21.977c11.975 11.974 27.942 20.007 45.753 21.919 11.776 1.263 20.224-8.439 20.224-18.517v-6.996a18.956 18.956 0 0 0-13.509-18.157l-.557-.167-.57-.112-8.022-1.58a18.958 18.958 0 0 0-15.25 2.568 42.144 42.144 0 0 1-7.027-7.027 18.958 18.958 0 0 0 2.569-15.252l-1.582-8.021-.112-.57-.167-.557A18.955 18.955 0 0 0 77.618 52H70.62c-10.077 0-19.78 8.446-18.517 20.223 1.912 17.81 9.944 33.779 21.92 45.754Zm33.652-10.179a6.955 6.955 0 0 1 6.916-1.743l8.453 1.665a6.957 6.957 0 0 1 4.956 6.663v6.996c0 3.841-3.124 6.995-6.943 6.585a63.903 63.903 0 0 1-26.887-9.232 64.594 64.594 0 0 1-11.661-9.241 64.592 64.592 0 0 1-9.241-11.661 63.917 63.917 0 0 1-9.232-26.888C63.626 67.123 66.78 64 70.62 64h6.997a6.955 6.955 0 0 1 6.66 4.957l1.667 8.451a6.956 6.956 0 0 1-1.743 6.917l-1.12 1.12a5.935 5.935 0 0 0-1.545 2.669c-.372 1.403-.204 2.921.603 4.223a54.119 54.119 0 0 0 7.745 9.777 54.102 54.102 0 0 0 9.778 7.746c1.302.806 2.819.975 4.223.603a5.94 5.94 0 0 0 2.669-1.545l1.12-1.12Z"
+                clip-rule="evenodd" />
+            </g>
+          </svg>
+          Whatsapp
+        </a>
+      </li>
+      <li class="hvr-underline-from-left" id="footer-lnk">
+        <a href="https://www.linkedin.com/in/nicolas-aguero99/" target="_blank">
+          <svg fill="#ffffff" width="800px" height="800px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z"
+                fill-rule="evenodd" />
+            </g>
+          </svg>
+          Linkedin
+        </a>
+      </li>
+      <li class="hvr-underline-from-left" id="footer-gth">
+        <a href="https://github.com/nicolasAguero99" target="_blank">
+          <svg width="800px" height="800px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+            <g id="SVGRepo_iconCarrier">
+              <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
+            </g>
+          </svg>
+          Github
+        </a>
+      </li>
+    </ul>
+    <small id="footer-copy">&copy; Nicolás Martín Agüero <span></span></small>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="scripts/script.js" async defer></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="scripts/particles.js" async defer></script>
+
+</body>
+
+</html>
