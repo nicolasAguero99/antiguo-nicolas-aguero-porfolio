@@ -664,6 +664,9 @@ Section About Me
 }
 
 #container-about-me-info > p {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   max-width: 600px;
   font-size: 18px;
   font-family: var(--font-subtitle);
@@ -671,11 +674,11 @@ Section About Me
   color: white;
 }
 
-#container-about-me-info > p > strong { 
+#container-about-me-info > p strong { 
   color: var(--primary);
 }
 
-#container-about-me-info > p > strong > a {
+#container-about-me-info > p strong > a {
   color: var(--primary);
 }
 
@@ -1255,7 +1258,7 @@ Media Mobile
   }
 
   #container-name > p {
-    width: 350px;
+    width: 550px;
   }
 
   #container-name > a {
